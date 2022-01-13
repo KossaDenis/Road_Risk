@@ -29,7 +29,7 @@ box_input.addEventListener("keydown", function(e){
 
 async function weather(){
     try{
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f45b83c31e53b7d1de1d6e00152df25d`, {mode: 'cors'});
+        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f45b83c31e53b7d1de1d6e00152df25d`,);
 
         const weatherData = await response.json();
         let temperature = Math.floor(weatherData.main.temp - 272) 
